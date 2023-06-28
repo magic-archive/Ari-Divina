@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Immigration Resource Website</title>
+  <style>
+    *
+    {
+      margin:0px;
+      padding:0px;
+      font-family:Ariel;
+      box-sizing:border-box;
+    }
+    #logo-nav-div{
+      width: 100%;
+      min-height: 100px;
+      background-color: #003748;
+      margin-bottom: 10px;
+    }
+    #logo-div{
+      text-align: center;
+      float:left;
+      width:25%;
+      min-height: 80px;
+      background-color:grey;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    #nav-menu{
+      float:right;
+      width: 70px;
+      min-height: 40px;
+      background-color: #6fb3b8;
+      margin-right: 50px;
+      margin-top: 25px;
+    }
+    #nav-menu .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    #nav-menu .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    #nav-menu .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    #nav-menu .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    #nav-menu .dropdown-content a:hover {background-color: #ddd;}
+
+    #nav-menu .dropdown:hover .dropdown-content {display: block;}
+
+    #nav-menu .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+    .clearfix::after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+    #image-div{
+      width: 100%;
+      min-height: 400;
+      background-color: inherit;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    #image-div .image{
+      width: 100%;
+      min-height: 300px;
+      background-color: #606060;
+    }
+    #main-div{
+      width: 100%;
+      min-height: 400px;
+      background-color: inherit;
+    }
+    #main-div .box{
+      width: 48%;
+      min-height: 400px;
+      background: linear-gradient(#82bcc1,#f6f6f2) ;
+      float:left;
+      margin-left: 1%;
+      padding: 10px;
+    }
+    #main-div .box:nth-child(2){
+      float: right;
+      margin-right: 1%;
+    }
+    #main-div .heading{
+      width: 100%;
+      background-color:#c2edce;
+      text-align: center;
+      border: 2px solid black;
+    }
+    #main-div .heading:nth-child(2){
+      width: 100%;
+      background-color:#c2edce;
+      text-align: center;
+      border: 2px solid black;
+    }
+
+    #info-div{
+      width: 100%;
+      min-height: 400px;
+      background-color:#6fb3b8;
+      margin-top: 10px;
+    }
+    #info-div .info{
+      width: 30%;
+      text-align: center;
+      background-color: #c2edce;
+      border: 2px solid black;
+    }
+</style>
+</head>
+<body style="background-color:#f6f6f2;">
+<div id="logo-nav-div" class="clearfix">
+  <div id="logo-div">
+    <a href="file:///Users/ariannavargas/Documents/Aris%20Website%20folder/Project/index.html">Logo</a>
+  </div> 
+  <!--Navigation Bar-->
+  <div id="nav-menu">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="file:///Users/ariannavargas/Documents/Aris%20Website%20folder/Project/assistance.html">Assistance</a>
+        <a href="#">Volunteer</a>
+        <a href="#info-div">About</a>
+      </div>
+    </div>
+        </div>
+  </div>
+</div>
+<div id="image-div">
+  <div class="image">
+    image box
+  </div>
+</div>
+<div id="main-div" class="clearfix">
+  <div class="box">
+    <div class="heading">
+      <h1><a href="file:///Users/ariannavargas/Documents/Aris%20Website%20folder/Project/assistance.html" style = "text-decoration:none;" style = "color: black;">Assistance</a></h1>
+    </div>
+    <br>
+    <p>
+      Here is for those in need of Housing, unemployment, lack of food/clothes, decline mental health and so much more
+    </p>
+  </div>
+  <div class="box">
+    <div class="heading">
+      <h1>Support/Volunteer</h1>
+    </div>
+    <br>
+    <p>
+      For those who would like to help support and find ways to volunterer to help
+    </p>
+  </div>
+</div>
+<div id="info-div">
+  <div class="info">
+    <h1>
+      About
+    </h1>
+  </div>
+</div>
+
+</body>
+</html>

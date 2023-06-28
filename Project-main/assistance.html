@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="uft-8">
+  <title>Assistance</title>
+  <style>
+    *
+    {
+      margin:0px;
+      padding:0px;
+      font-family: Arial;
+      box-sizing: border-box;
+    }
+    #logo-nav-div{
+      width: 100%;
+      min-height: 100px;
+      background-color: #003748;
+      margin-bottom: 10px;
+    }
+    #logo-div{
+      text-align: center;
+      float:left;
+      width:25%;
+      min-height: 80px;
+      background-color:grey;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    #nav-menu{
+      float:right;
+      width: 70px;
+      min-height: 40px;
+      background-color: #6fb3b8;
+      margin-right: 50px;
+      margin-top: 25px;
+    }
+    #nav-menu .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    #nav-menu .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    #nav-menu .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    #nav-menu .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    #nav-menu .dropdown-content a:hover {background-color: #ddd;}
+
+    #nav-menu .dropdown:hover .dropdown-content {display: block;}
+
+    #nav-menu .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+    .clearfix::after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+    #info-div{
+      width: 100%;
+      min-height: 400px;
+      background-color:#6fb3b8;
+      margin-top: 10px;
+    }
+    #info-div .info{
+      width: 30%;
+      text-align: center;
+      background-color: #c2edce;
+      border: 2px solid black;
+    }
+    .container {
+      display: flex;
+      position:relative;
+      margin:auto;
+      border-radius:200px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      background-color: #04AA6D;
+      cursor: pointer;
+      width:150px;
+      position: relative;
+      top: 50px;
+
+    }
+    nav a {
+      padding: 20px;
+    }
+    nav a:hover {
+      background-color: #3e8e41;
+      display: block;
+    }
+    main div {
+      display: none;
+      padding: 20px;
+    }
+    main {
+      position: relative;
+      top: 50px;
+      background-color: #6fb3b8;
+    }
+    .active {
+      display: block;
+      margin-right: 10px;
+    }
+</style>
+</head>
+<body style="background-color:#f6f6f2;">
+  <div id="logo-nav-div" class="clearfix">
+    <div id="logo-div">
+      <a href="file:///Users/ariannavargas/Documents/Aris%20Website%20folder/Project/index.html">Logo</a>
+    </div> 
+    <!--Navigation Bar-->
+    <div id="nav-menu">
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="file:///Users/ariannavargas/Documents/Aris%20Website%20folder/Project/assistance.html">Assistance</a>
+          <a href="#">Volunteer</a>
+          <a href="file:///Users/ariannavargas/Documents/Aris%20Website%20folder/Project/index.html#info-div">About</a>
+        </div>
+      </div>
+          </div>
+    </div>
+  </div>
+<div class="container">
+  <nav>
+    <a data-id="1">Scholarships</a>
+    <a data-id="2">Jobs</a>
+    <a data-id="3">Housing</a>
+    <a data-id="4">Financial Assistance</a>
+    <a data-id="5">Immigration Legal Services</a>
+  </nav>
+  <main>
+    <div class="active">Many undocumented students are not aware that there are opportunities for scolorships that will allow them the chance of
+      persuing higher education. Most undocumented students not only live the fear of being deported, but also the fear of not being
+    able to afford a college education. <br>Check out MALDEF's Scholarships guide!<br>
+<a href="https://www.maldef.org/resources/scholarship-resource-guide-2022-2023/">Click here!</a>
+    </div>
+    <div>Where to find help in getting a job, resume, etc
+    </div>
+    <div>If you are stuggling with homelessness <br>Check out DownTown Street Team whose mission is to end homelessness through the work and power in their community!<br>
+    <a href="https://www.streetsteam.org/">Click here!</a>
+    </div>
+    <div>
+      something
+    </div>
+    <div>
+      Here are some immigration legal Services
+  
+      <br>Check out SALA(Senior Adults Legal Assistance). They provide services like: Public long benefits, long term care,housing consumer laws, simple wills<br>
+      <a href="http://s393914827.initial-website.com/">Click here!</a>
+      <br>Check out Siren(Services,Immigrant,Rights & Education Network). They provide services like Free Legal Consultations<br>
+      <a href="https://www.sirenimmigrantrights.org/">Click here!</a>
+    </div>
+  </main>
+    
+</div>
+<script>
+document.querySelectorAll('nav a')
+  .forEach(e => e.addEventListener('click', _ => change(e.dataset.id)))
+    
+    
+function change(n) {
+  let panels = document.querySelectorAll('main div')
+  panels.forEach(p => p.classList.remove('active'))
+  panels[n - 1].classList.add('active')
+}
+</script> 
+</body>
+</html>
